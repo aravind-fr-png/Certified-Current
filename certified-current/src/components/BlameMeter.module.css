@@ -1,0 +1,43 @@
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 10px;
+}
+
+.row {
+  margin-bottom: 9px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+.barBg {
+  height: 9px;
+  background: var(--paper-dark);
+  border: 1px solid var(--ink);
+}
+
+.barFill {
+  height: 100%;
+  background: var(--ink);
+  width: 0%;
+  transition: width 0.9s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.b1 {
+  background: var(--danger);
+}
+.b2 {
+  background: var(--copper);
+}
+.b3 {
+  background: var(--circuit);
+}
+.b4 {
+  background: var(--hazard-dark);
+}

@@ -1,0 +1,214 @@
+.sheet {
+  width: 100%;
+  max-width: 460px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hazardStrip {
+  height: 10px;
+  background: repeating-linear-gradient(45deg, var(--hazard) 0 14px, var(--ink) 14px 28px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px 22px 24px;
+}
+
+.stampRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.statusTag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: 2px solid currentColor;
+}
+
+.mid {
+  color: var(--hazard-dark);
+}
+.high {
+  color: var(--circuit);
+}
+
+.stamp {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  border: 2px solid var(--ink);
+  color: var(--ink-soft);
+  padding: 4px 8px;
+  transform: rotate(4deg);
+}
+
+.scoreBlock {
+  text-align: left;
+  margin: 6px 0 6px;
+}
+
+.scoreNumber {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'JetBrains Mono', monospace;
+  word-break: break-all;
+  transition: color 0.3s;
+}
+
+.scoreNumber.proGlow {
+  color: var(--hazard-dark);
+  text-shadow: 1px 1px 0 var(--ink);
+}
+
+.scoreCaption {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 10px;
+}
+
+.predictionGif {
+  display: block;
+  width: 165px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 165 / 294;
+  object-fit: contain;
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  background: var(--paper-dark);
+}
+
+.explanation {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--copper);
+  background: rgba(181, 101, 29, 0.08);
+}
+
+.explanationPro {
+  border-left-color: var(--hazard-dark);
+  background: rgba(240, 180, 41, 0.12);
+  font-weight: 500;
+}
+
+.upgradeBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0 4px;
+  padding: 10px 12px;
+  border: 2px dashed var(--hazard-dark);
+  background: rgba(240, 180, 41, 0.1);
+  font-size: 12px;
+}
+
+.upgradeBanner button {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 7px 10px;
+  background: var(--ink);
+  color: var(--hazard);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.upgradeBanner button:hover {
+  background: var(--copper);
+}
+
+.diagnosisBox {
+  background: var(--paper-dark);
+  border: 2px solid var(--ink);
+  padding: 12px 14px;
+  font-size: 14px;
+  margin: 14px 0;
+  line-height: 1.5;
+  display: block;
+}
+
+.diagLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.actions button {
+  flex: 1;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: var(--hazard);
+}
+
+.restartBtn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+  cursor: pointer;
+}
+
+.restartBtn:hover {
+  background: var(--copper);
+  border-color: var(--copper);
+}
+
+.finalUpgradeMsg {
+  margin-top: 14px;
+  padding: 12px 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #2a2410;
+  color: var(--hazard);
+  border: 2px solid var(--hazard-dark);
+}
+
+.disclaimer {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-top: 14px;
+  line-height: 1.5;
+}

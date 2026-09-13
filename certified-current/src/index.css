@@ -1,0 +1,44 @@
+:root {
+  --paper: #efead9;
+  --paper-dark: #e3dcc6;
+  --ink: #221f1b;
+  --ink-soft: #4a453c;
+  --hazard: #f0b429;
+  --hazard-dark: #c98d0f;
+  --danger: #a6331e;
+  --circuit: #3c6e52;
+  --copper: #b5651d;
+  --line: rgba(34, 31, 27, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 18px,
+      rgba(34, 31, 27, 0.02) 18px,
+      rgba(34, 31, 27, 0.02) 36px
+    ),
+    var(--paper);
+  color: var(--ink);
+}
+
+button {
+  font-family: inherit;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}

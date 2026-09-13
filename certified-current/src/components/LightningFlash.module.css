@@ -1,0 +1,71 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 35;
+}
+
+.flash {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  opacity: 0;
+  animation: flash-pulse 1.6s ease-out 2;
+}
+
+@keyframes flash-pulse {
+  0% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 0.5;
+  }
+  14% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bolt {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  animation: bolt-pop 1.6s ease-out 2;
+}
+
+.boltA {
+  top: 10px;
+  right: 18%;
+  animation-delay: 0s;
+}
+
+.boltB {
+  top: 40px;
+  left: 12%;
+  font-size: 22px;
+  animation-delay: 0.15s;
+}
+
+@keyframes bolt-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-8deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.2) rotate(4deg);
+  }
+  22% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

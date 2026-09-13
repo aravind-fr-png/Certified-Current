@@ -1,0 +1,97 @@
+.sheet {
+  width: 100%;
+  max-width: 460px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  position: relative;
+  box-shadow: 8px 8px 0 var(--ink);
+  margin: 0 auto;
+}
+
+.hazardStrip {
+  height: 10px;
+  background: repeating-linear-gradient(45deg, var(--hazard) 0 14px, var(--ink) 14px 28px);
+}
+
+.header {
+  padding: 20px 22px 14px;
+  border-bottom: 2px dashed var(--line);
+}
+
+.boardId {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.1;
+  margin: 10px 0 4px;
+  font-weight: 700;
+}
+
+.subtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.section {
+  padding: 18px 22px;
+  border-bottom: 2px dashed var(--line);
+}
+
+.sectionLast {
+  padding: 18px 22px 20px;
+}
+
+.fieldLabel {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.textInput {
+  width: 100%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.textInput:focus {
+  outline: 2px solid var(--copper);
+  outline-offset: 1px;
+}
+
+.generateBtn {
+  width: 100%;
+  padding: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.generateBtn:hover {
+  background: var(--copper);
+  border-color: var(--copper);
+}
+
+.generateBtn:active {
+  transform: translateY(1px);
+}

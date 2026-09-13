@@ -1,0 +1,63 @@
+.sheet {
+  width: 100%;
+  max-width: 460px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  margin: 0 auto;
+}
+
+.hazardStrip {
+  height: 10px;
+  background: repeating-linear-gradient(45deg, var(--hazard) 0 14px, var(--ink) 14px 28px);
+}
+
+.content {
+  padding: 40px 28px 34px;
+  text-align: center;
+}
+
+.ring {
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background: var(--paper-dark);
+}
+
+.ringPercent {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.stage {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+  min-height: 16px;
+}
+
+.track {
+  height: 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper-dark);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--copper);
+  transition: width 0.3s ease-out;
+}

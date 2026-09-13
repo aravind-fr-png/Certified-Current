@@ -1,0 +1,63 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(34, 31, 27, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.box {
+  width: 100%;
+  max-width: 360px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+  padding: 20px;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--danger);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.question {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.optionBtn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper-dark);
+  cursor: pointer;
+  text-align: left;
+}
+
+.optionBtn:hover {
+  background: var(--hazard);
+}
+
+.footnote {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin: 14px 0 0;
+  text-align: center;
+}
